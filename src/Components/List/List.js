@@ -14,7 +14,7 @@ class FriendList extends Component {
       return (
           <>
               <ul>
-                 {friends.map(friend => <ListItem  key={friend.id} {...friend}/>)}
+                 {friends.map(friend => <ListItem key={friend.id} />)}
               </ul>
           </>
       );
