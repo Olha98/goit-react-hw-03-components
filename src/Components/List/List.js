@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import style from './List.module.css';
+// import style from './List.module.css';
 import ListItem from '../ListItem/ListItem'
 
 
@@ -14,7 +14,7 @@ class FriendList extends Component {
       return (
           <>
               <ul>
-                 {friends.map(friend => <ListItem key={friend.id} />)}
+                 {friends.map(friend=> <ListItem key={friend.id} {...friend}/>)}
               </ul>
           </>
       );
