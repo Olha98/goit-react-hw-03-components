@@ -1,16 +1,18 @@
 import React,{Component} from 'react';
-// import style from './List.module.css';
+import './List.module.css';
 import ListItem from '../ListItem/ListItem'
+import PropTypes from 'prop-types';
 
 
 class FriendList extends Component {
-  state = {
- 
-  }
+  static propTypes = {
+    friends: PropTypes.array
+  };
+
 
   render() {
     const friends = this.props.friends;
-    console.log(friends)
+   
       return (
           <>
               <ul>
@@ -20,5 +22,7 @@ class FriendList extends Component {
       );
   }
 }
+
+
 
 export default FriendList;
